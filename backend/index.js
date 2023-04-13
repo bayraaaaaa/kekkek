@@ -2,6 +2,7 @@ import express  from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv"
 import cors from "cors"
+import userRouter from "./router/user.js";
 
 const app = express()
 dotenv.config();
@@ -12,14 +13,12 @@ const uri = process.env.MONGODB || "";
 
  app.use(cors()); 
  app.use(express.json());
-
+ app.use("/user", userRouter)
 
 
 const connect = () => {
-    console.log(uri,);
-
+    // console.log(uri,);
   try {
-
 mongoose.set("strictQuery", true);
 mongoose.connect(uri, {}).then(() => {
   console.log("Connected MongoDB");
