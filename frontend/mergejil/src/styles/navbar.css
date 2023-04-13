@@ -1,0 +1,10 @@
+.navbarContainer{
+    font-size: 22px;
+    height: 80px;
+}
+.categoryNavbar{
+    gap: 20px;
+}
+/* .navbarPills{
+    background-color:black;
+} */
