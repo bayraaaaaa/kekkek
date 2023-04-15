@@ -67,7 +67,6 @@ export const createUser = async(req,res) =>{
     export const updateUser = async (req, res)=>{
         try {
             const body = req.body
-            const id = req.params.id
             const updateUser = await User.updateMany({ 
                 username : body.username,
                 email:body.email,
