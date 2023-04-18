@@ -1,0 +1,82 @@
+.sectionContainer{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.itemContainer{
+    height: 15%;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+}
+.itemHeaderTextOne{
+    color: rgb(50, 132, 199);
+    font-size:19px;
+}
+.itemHeaderTextTwo{
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.itemHeaderTextOneContainer{
+    height: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.itemHeaderTextTwoContainer{
+    height: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.categoryContainer{
+    width: 70%;
+    height: 50%;
+
+}
+.category{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.occcupation{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-color: gray;
+    background-size : cover;
+}
+.buttonContainer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: 50px;
+    width: 200px;
+    border: transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    background-color:  rgb(50, 132, 199);
+}
+.text{
+    font-size: 20px;
+    z-index: 1;
+    color:  black;
+}
