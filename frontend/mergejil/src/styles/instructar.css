@@ -1,0 +1,52 @@
+.stack {
+  display: grid;
+  grid-auto-rows: 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.job {
+    color: #4986fc;
+    font-size: 16px;
+}
+.des {
+    color: #999999;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.stackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span {
+    color: #4986fc;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+	opacity: 0;
+    display: block;
+    text-align: center;
+    z-index: -1;
+    bottom: -20px;
+}
+.img {
+    transition: .5s ease-in-out;
+    transform: scale(1.2);
+    margin-top: 5px;
+}
+.img:hover+span {
+    opacity: 1;
+    cursor: pointer;
+}
+.img:hover {
+    margin-top: 0;
+}
+.imgContainer {
+    overflow: hidden;
+}
+
+
+
