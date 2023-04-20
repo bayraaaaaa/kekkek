@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv"
 import cors from "cors"
 import userRouter from "./router/user.js";
+import instructorRouter from "./router/instructor.js";
 import authorizationRouter from "./router/authorization.js";
 
 const app = express()
@@ -16,6 +17,7 @@ const uri = process.env.MONGODB || "";
  app.use(express.json());
  app.use("/user", userRouter)
  app.use("/authorization",authorizationRouter)
+ app.use("/instructor",instructorRouter)
 
 
 const connect = () => {
