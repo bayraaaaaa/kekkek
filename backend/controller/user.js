@@ -11,7 +11,7 @@ export const createUser = async(req,res) =>{
             data:user
         })
     } catch (error) {
-        res.status(400).send({
+        res.status(400).send({  
             success:false,
             data:error.message
         })
