@@ -5,6 +5,7 @@ import cors from "cors"
 import userRouter from "./router/user.js";
 import instructorRouter from "./router/instructor.js";
 import authorizationRouter from "./router/authorization.js";
+import testimonialsRouter from "./router/homeTestimonials.js";
 
 const app = express()
 dotenv.config();
@@ -18,6 +19,7 @@ const uri = process.env.MONGODB || "";
  app.use("/user", userRouter)
  app.use("/authorization",authorizationRouter)
  app.use("/instructor",instructorRouter)
+app.use("/testimonials",testimonialsRouter)
 
 
 const connect = () => {
