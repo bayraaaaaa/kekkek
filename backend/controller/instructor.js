@@ -1,30 +1,32 @@
-import User from "../model/User.js";
+import Instructor from "../model/instructor.js";
 import jwt from "jsonwebtoken";
 
 
-export const createUser = async(req,res) =>{
+export const createInstructor = async(req,res) =>{
     try {
-        const user =  await User.create(req.body)
+        const instructor =  await Instructor.create(req.body)
         console.log(req.body)
         res.status(200).send({
             success:true,
-            data:user
+            data:instructor
         })
     } catch (error) {
-        res.status(400).send({  
+        res.status(400).send({
             success:false,
             data:error.message
         })
     }
     }
     
-    export const getAllUser = async (req,res)=>{
+    export const getAllInstructor = async (req,res)=>{
         try {
-          const allUser = await User.find({})
-        console.log(allUser)
+            const skip =req.query.skip
+            const limit = req.query.limit
+          const getAllInstructor = await Instructor.find({}).limit(limit).skip(skip)
+        console.log(getAllInstructor)
             res.status(200).send({
                 success:true,
-                data:allUser
+                data:getAllInstructor
             })
         } catch (error) {
             res.status(400).send({
@@ -33,13 +35,13 @@ export const createUser = async(req,res) =>{
             })
         }
     }
-    export const getUserById = async (req,res)=>{
+    export const getInstructorById = async (req,res)=>{
         const id = req.params
         try {
-            const userById = await User.findById({_id:id})
+            const getInstructorById = await Instructor.findById({_id:id})
             res.status(200).send({
                 success:true,
-                data:userById
+                data:getInstructorById
             })
         } catch (error) {
             res.status(400).send({
@@ -49,13 +51,13 @@ export const createUser = async(req,res) =>{
         }
     }
     
-    export const deleteUser = async(req, res)=>{
+    export const deleteInstructor = async(req, res)=>{
         const id = req.params.id
         try {
-            const deleteUser = await User.deleteOne({_id:id})
+            const deleteInstructor = await Instructor.deleteOne({_id:id})
             res.status(200).send({
                 success:true,
-                data:deleteUser
+                data:deleteInstructor
             })
         } catch (error) {
             res.status(400).send({
@@ -64,20 +66,19 @@ export const createUser = async(req,res) =>{
             })
         }
     }
-    export const updateUser = async (req, res)=>{
+    export const updateInstructor = async (req, res)=>{
         try {
             const body = req.body
-            const updateUser = await User.updateMany({ 
-                username : body.username,
-                email:body.email,
-                password:body.password,
-                age:body.age,
-                phoneNumber:body.phoneNumber,
-                gender:body.gender
+            const updateInstructor = await Instructor.updateMany({ 
+                image:body.image,
+                name : body.name,
+               profession: body.profession,
+               description: body.description
+
              })
             res.status(200).send({
                 success:true,
-                data:updateUser
+                data:updateInstructor
             })
         } catch (error) {
             res.status(400).send({
