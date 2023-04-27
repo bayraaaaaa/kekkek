@@ -1,7 +1,4 @@
-import React from "react";
-import Navbar from "./components/navbar";
-import Instructor from "./pages/InstracturPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 import Section from "./components/section";
 import SignUp from "./pages/SignUpPage";
@@ -45,6 +42,7 @@ function App() {
       {/* <Section /> */}
       {/* <Testimonial /> */}
       {/* <Section /> */}
+
 
 
 
