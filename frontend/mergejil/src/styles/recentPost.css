@@ -1,0 +1,39 @@
+.containerRecent{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+.BlogRecentPost{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.RecentPostTag{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BlogRecentPostText{
+    color: rgb(50, 132, 199);
+    font-size: 23px;
+}
+.RecentPostTagText{
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+}
+.recentPostContainer{
+    width: 100%;
+    height: 580px;
+}
+.containerShits{
+    width: 100%;
+    height: 83%;
+}
