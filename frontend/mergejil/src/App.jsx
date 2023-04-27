@@ -3,11 +3,11 @@ import Navbar from "./components/navbar";
 
 import Instructor from "./pages/InstracturPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-=======
+
 import Container from "react-bootstrap/Container";
 import Overlay from "./components/overlay";
 import Section from "./components/section";
-
+import Login from "./components/Login";
 function App() {
   return (
     <>
@@ -16,17 +16,14 @@ function App() {
         {/* <Navbar/> */}
       {/* </div> */}
       <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Navbar />}></Route>
-        <Route path="/Instructor" element={<Instructor />}></Route>
-      </Routes>
-    </BrowserRouter>
-
-        <Navbar />
-      </div> */}
-      
-      <Section />
-
+        <Routes>
+          <Route path="/" element={<Navbar />}></Route>
+          <Route path="/Instructor" element={<Instructor />}></Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <Navbar /> */}
+      {/* <Section /> */}
+      <Login />
     </>
   );
 }
