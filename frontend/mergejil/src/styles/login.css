@@ -1,0 +1,88 @@
+*{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(88,134,249);
+}
+.greyText{
+    color: grey;
+    font-size:15px;
+    z-index: 100000;
+    cursor: pointer;
+}
+.blueText{
+    color: rgb(88,134,249);
+    font-size: 18px;
+    z-index: 100000;
+    cursor: pointer;
+}
+.loginContainer{
+    position: absolute;
+    bottom: 1px;
+    right: 450px;
+    background-color: white    ;
+    border-radius: 10px 10px 0px 0px;
+    height: 590px;
+    width: 445px; 
+    padding: 48px;
+    z-index: 1;
+    border: 1px solid;
+  box-shadow: 5px 10px 8px #bebaba;
+}
+.loginHeader{
+    width: 349px;
+    height: 30px;
+    margin: 0px 0px 24px;
+}
+.main{
+    height: 295.33px;
+    width: 349px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.loginInput{
+    height: 52px;
+    width: 349px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px grey solid;
+    padding: 6px 20px;
+}
+.loginFooter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 37.33px;
+    width: 349;
+    margin: 25px 0px 30px;
+}
+.loginIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(88,134,249);
+    height: 41.33px;
+    width: 41.33px;
+    border-radius: 5px;
+    z-index: 10000;
+}
+.loginFooterChoose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+    width: 349px;
+    
+}
+.loginFooterShadow{
+    position: relative; 
+    right: 48px;
+    bottom: 100px;
+    height: 165px;
+    width: 445px;
+    background-color: rgba(203, 209, 207, 0.5);
+    z-index: 100;
+    border-radius: 70% 0px 0px;
+
+}

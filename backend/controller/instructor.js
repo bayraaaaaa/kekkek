@@ -20,7 +20,9 @@ export const createInstructor = async(req,res) =>{
     
     export const getAllInstructor = async (req,res)=>{
         try {
-          const getAllInstructor = await Instructor.find({})
+            const skip =req.query.skip
+            const limit = req.query.limit
+          const getAllInstructor = await Instructor.find({}).limit(limit).skip(skip)
         console.log(getAllInstructor)
             res.status(200).send({
                 success:true,
