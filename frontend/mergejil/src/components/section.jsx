@@ -41,37 +41,37 @@ function Section() {
   ];
   return (
     <>
-      <div className="sectionContainer">
-        <div className="itemContainer">
-          <div className="itemHeaderTextContainer">
-            <div className="itemHeaderTextOneContainer">
+      <div className="sectionContainerSN">
+        <div className="itemContainerSN">
+          <div className="itemHeaderTextContainerSN">
+            <div className="itemHeaderTextOneContainerSN">
               {" "}
-              <p className="itemHeaderTextOne">START STUDYING TODAY</p>
+              <p className="itemHeaderTextOneSN">START STUDYING TODAY</p>
             </div>
 
-            <div className="itemHeaderTextTwoContainer">
+            <div className="itemHeaderTextTwoContainerSN">
               {" "}
-              <p className="itemHeaderTextTwo">
+              <p className="itemHeaderTextTwoSN">
                 View Categories Of Occupations
               </p>
             </div>
           </div>
         </div>
-        <div className="categoryContainer">
-          <div className="category">
+        <div className="categoryContainerSN">
+          <div className="categorySN">
             {objects.map((e) => {
               return (
                 <div
-                  className="occcupation"
+                  className="occcupationSN"
                   style={{ backgroundImage: `url("${e.image}")` }}
                 >
-                  <p className="text">{e.title}</p>
+                  <p className="textSN">{e.title}</p>
                 </div>
               );
             })}
           </div>
-          <div className="buttonContainer">
-            <button className="button">See All Occupations</button>
+          <div className="buttonContainerSN">
+            <button className="buttonSN">See All Occupations</button>
           </div>
         </div>
       </div>

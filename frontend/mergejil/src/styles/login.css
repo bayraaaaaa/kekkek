@@ -1,7 +1,7 @@
 *{
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(88,134,249);
+
 }
 .greyText{
     color: grey;
@@ -25,7 +25,6 @@
     width: 445px; 
     padding: 48px;
     z-index: 1;
-    border: 1px solid;
   box-shadow: 5px 10px 8px #bebaba;
 }
 .loginHeader{

@@ -30,46 +30,46 @@ function testimonial() {
   ];
   return (
     <>
-      <div className="backgroundContainer">
-        <div className="halfContainer">
-          <div className="textContainer">
+      <div className="backgroundContainerTM">
+        <div className="halfContainerTM">
+          <div className="textContainerTM">
             <div className="text">
-              <span className="firstTextInHalf">Testimonial</span>
+              <span className="firstTextInHalfTM">Testimonial</span>
               <br />
-              <span className="secondTextInHalf">What Are Students Say</span>
+              <span className="secondTextInHalfTM">What Are Students Say</span>
             </div>
           </div>
         </div>
-        <div className="secondHalfContainer"></div>
+        <div className="secondHalfContainerTM"></div>
         {data.map((e) => {
           const arr = new Array(e.rate).fill(0);
           return (
             <>
-              <div className="testimonialsContainer">
-                <div className="testimonialContainer">
-                  <div className="header">
+              <div className="testimonialsContainerTM">
+                <div className="testimonialContainerTM">
+                  <div className="headerTM">
                     {arr.map((el) => (
-                      <AiFillStar className="starRate" />
+                      <AiFillStar className="starRateTM" />
                     ))}
                   </div>
-                  <div className="contentTestimonials">
-                    <p className="contentText">
+                  <div className="contentTestimonialsTM">
+                    <p className="contentTextTM">
                       Far far away, behind the word mountains, far from the
                       countries Vokalia and Consonantia, there live the blind
                       texts.
                     </p>
                   </div>
-                  <div className="bottomTestimonialsContainer">
-                    <div className="profileDiv">
+                  <div className="bottomTestimonialsContainerTM">
+                    <div className="profileDivTM">
                       <img
                         src={e.image}
                         alt=""
-                        className="profileTestimonials"
+                        className="profileTestimonialsTM"
                       />
                     </div>
-                    <div className="infoTestimonials">
-                      <span className="nameTestimonials">{e.name}</span>
-                      <p className="proffesionTestimonials">{e.proffesion}</p>
+                    <div className="infoTestimonialsTM">
+                      <span className="nameTestimonialsTM">{e.name}</span>
+                      <p className="proffesionTestimonialsTM">{e.proffesion}</p>
                     </div>
                   </div>
                 </div>

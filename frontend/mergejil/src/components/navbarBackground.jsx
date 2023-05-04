@@ -34,10 +34,10 @@ function NavbarComponent() {
           variant="pills"
           defaultActiveKey="/home"
           className="navbarPills"
-          style={{backgroundColor:"transparent"}}
+          style={{backgroundColor:"white"}}
         >
           <Container className="navbarContainer">
-            <Navbar.Brand href="/home" style={{ color: "white" }}>
+            <Navbar.Brand href="/home" style={{ color: "black" }}>
               Navbar
             </Navbar.Brand>
             <Nav className="categoryNavbar">
@@ -55,7 +55,7 @@ function NavbarComponent() {
                 return (
                   <Nav.Link
                     onClick={() => setCurrentPage(el.title)}
-                    style={{ color: "white" }}
+                    style={{ color: "black" }}
                   >
                     {el.title}
                   </Nav.Link>
