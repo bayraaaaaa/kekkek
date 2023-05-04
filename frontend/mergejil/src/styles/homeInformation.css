@@ -1,0 +1,88 @@
+.homeINFORMATIONcontainer{
+    height: 750px;
+    width: 100%;
+    background-color: rgb(216, 206, 206);
+    display: flex;
+}
+.homeINFORMATIONfirstHalfContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.homeINFORMATIONsecondHalfContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.homeINFORMATIONimageContainer{
+    width: 60%;
+    height: 80%;
+    position: relative;
+}
+.homeINFORMATIONimageFirst{
+    width: 65%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeINFORMATIONimageFirstImage{
+    width: 90%;
+    height: 90%;
+    background-image:url("https://themewagon.github.io/studylab/images/about-1.jpg");
+    background-size: 100%;
+}
+.homeINFORMATIONimageSecond{
+    width: 65%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+.homeINFORMATIONimageSecondImage{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-image: url("https://themewagon.github.io/studylab/images/about.jpg");
+    background-size: cover;
+}
+.homeINFORMATIONsecondHalfContentContainer{
+    width: 60%;
+    height: 80%;
+    margin-left: 100px;
+}
+.homeINFORMATIONsecondHalfContentTop{
+    width: 50%;
+    height: 10%;
+    padding-top: 25px;
+    margin-top: 60px;
+}
+.homeINFORMATIONsecondHalfContentSecond{
+    width: 70%;
+    height: 20%;
+}
+.homeINFORMATIONsecondHalfContentDescription{
+    width: 90%;
+    height: 35%;
+}
+.homeINFORMATIONsecondHalfContentButton{
+    width: 40%;
+    height: 20%;
+}
+.homeINFORMATIONsecondHalfContentButtonL{
+    width: 90%;
+    height: 40%;
+    background-color: #4986fc;
+    border: transparent;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
