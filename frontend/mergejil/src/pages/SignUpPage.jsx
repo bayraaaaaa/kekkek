@@ -3,10 +3,30 @@ import { TbGenderFemale, TbGenderMale } from "react-icons/tb";
 import { useState } from "react";
 import "react-bootstrap";
 import Button from "react-bootstrap/Button";
-
+import axios from "axios";
 function App() {
+  const [name, setName] = useState();
+  const [password, setPassword] = useState();
+  const [email, setEmail] = useState();
+  const [phone, setPhone] = useState();
+  const [gender, setGender] = useState();
+  const [age, setAge] = useState();
   const { change, setChange } = useState(true);
 
+  const SignUp = async () => {
+    try {
+      await axios.post("http://localhost:6969/user/createUser", {
+        password: password,
+        name: name,
+        email: email,
+        phone: phone,
+        age: age,
+      });
+      alert("Amjilttai burtguullee");
+    } catch (error) {
+      alert(error.message);
+    }
+  };
   const handleClick = () => {
     setChange(!change);
   };
@@ -30,6 +50,7 @@ function App() {
                   type="text"
                   className="inputt"
                   placeholder="Tanvir Hassan"
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="inputContainer">
@@ -38,6 +59,7 @@ function App() {
                   type="text"
                   className="inputt"
                   placeholder="ftanvirhasan@gmail.com"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="inputContainer">
@@ -57,11 +79,17 @@ function App() {
                   type="date"
                   className="inputt"
                   placeholder="May 25, 1977"
+                  onChange={(e) => setAge(e.target.value)}
                 />
               </div>
               <div className="inputContainer">
                 <div className="text">Phone</div>
-                <input type="text" className="inputt" placeholder="8811****" />
+                <input
+                  type="text"
+                  className="inputt"
+                  placeholder="8811****"
+                  onChange={(e) => setPhone(e.target.value)}
+                />
               </div>
               <div className="inputContainer">
                 <div className="text">Password</div>
@@ -69,11 +97,14 @@ function App() {
                   type="password"
                   className="inputt"
                   placeholder="Fire007008"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div className="buttonTwo">
                 <Button variant="dark">Cancel</Button>
-                <Button variant="primary">Confirm</Button>
+                <Button variant="primary" onClick={() => SignUp()}>
+                  Confirm
+                </Button>
               </div>
             </div>
           </div>

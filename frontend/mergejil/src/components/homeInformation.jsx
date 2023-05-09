@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/homeInformation.css";
+
 function homeInformation() {
   return (
     <>

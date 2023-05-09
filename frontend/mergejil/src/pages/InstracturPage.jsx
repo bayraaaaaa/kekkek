@@ -5,7 +5,8 @@ import Pagination from "@mui/material/Pagination";
 import "../styles/instructar.css";
 import { BsTwitter, BsInstagram, BsGoogle } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/Footer";
 function App() {
   const data = [
     {
@@ -68,6 +69,22 @@ function App() {
 
   return (
     <>
+      <div className="aboutUsPageHeaderContainer">
+        <Navbar />
+        <div className="overlayAboutUsPageHeader"></div>
+        <div className="aboutUsPageHeaderContent">
+          <div className="aboutUsPageHeaderContentTop">
+            <p className="aboutUsPageHeaderContentTopText">
+              Home 〉 Certified Instructor 〉
+            </p>
+          </div>
+          <div className="aboutUsPageHeaderContentBottom">
+            <p className="aboutUsPageHeaderContentBottomText">
+              Certified Instructor
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="stackContainer">
         <div className="stack" gap={3}>
           {data.map((el) => {
@@ -95,6 +112,7 @@ function App() {
       <div className="pagination">
         <Pagination count={5} variant="outlined" color="primary" />
       </div>
+      <Footer />
     </>
   );
 }

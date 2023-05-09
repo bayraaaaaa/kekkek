@@ -34,7 +34,7 @@ function NavbarComponent() {
           variant="pills"
           defaultActiveKey="/home"
           className="navbarPills"
-          style={{backgroundColor:"transparent"}}
+          style={{ backgroundColor: "transparent", zIndex: "3" }}
         >
           <Container className="navbarContainer">
             <Navbar.Brand href="/home" style={{ color: "white" }}>
