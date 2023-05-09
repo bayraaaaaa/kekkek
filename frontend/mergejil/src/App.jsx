@@ -15,23 +15,24 @@ function App() {
   };
   return (
     <>
-      {isLoggedIn ? (
-        <>
+      {/* {isLoggedIn ? ( */}
+        {/* <> */}
           {/* <button onClick={isLoggedIn(true)}>login</button>
           <button onClick={isLoggedIn(false)}>logout</button>
           <div>you are logged in</div> */}
-        </>
-      ) : (
-        <>
+        {/* </> */}
+      {/* // ) : ( */}
+        {/* // <> */}
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<AboutUsPage />}></Route>
+              <Route path="/" element={<Home />}></Route>
               <Route path="/Instructor" element={<Instructor />}></Route>
-              <Route path="/footer" element={<InformationSidebar />}></Route>
+              <Route path="/About" element={< AboutUsPage/>}></Route>
+              <Route path="/SignupPage" element={< SignupPage/>}></Route>
             </Routes>
           </BrowserRouter>
-        </>
-      )}
+        {/* </>
+      )} */}
     </>
   );
 }

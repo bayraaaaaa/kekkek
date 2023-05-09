@@ -23,6 +23,7 @@ function App() {
         age: age,
       });
       alert("Amjilttai burtguullee");
+      window.location.replace("/")
     } catch (error) {
       alert(error.message);
     }
