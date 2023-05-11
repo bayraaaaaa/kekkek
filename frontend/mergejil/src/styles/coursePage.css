@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.big {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bigBox {
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 15%;
+    background-color: red;
+}
+.bigBoxTwo {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+}
+.price {
+    display: inline-block;
+    margin-top: 60%;
+    margin-left: 5%;
+    background: #4986fc;
+    color: #fff;
+    padding: 2px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    height: 15vh;
+}

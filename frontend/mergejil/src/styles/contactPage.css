@@ -1,0 +1,118 @@
+.contactPageTitle{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+}
+.contactPageText{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.CSORIcon{
+    color: white;
+    height: 20px;
+}
+.whiteText{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.contactPageContainer{
+display: flex;
+flex-direction: column;
+background-size: 100%;
+}
+.contactPageMainContainer{
+    display: flex;
+    justify-content: center;
+    height: 1210px;
+    width: 100vw;
+    background-color: brown;
+    padding: 112px 0px;
+}
+.contactPageMain{
+    height: 1140px;
+    width: 986px;
+    background-color: green;
+    margin: 0px -15px;
+}
+.contactSectionOne{
+    display: flex;
+    background-color: white;
+    height: 538px;
+    width:986px ;
+}
+.contactSectionOneRight{
+    display: flex;
+    flex-direction: column;
+    background-color: #4986FC;
+    padding: 48px;
+    height: 538px;
+    width: 370px;
+}
+.contactSectionOneleft{
+background-color: aqua;
+height: 538px;
+width: 740px;
+padding: 48px;
+}
+.contactSectionOneRightHeader{
+    height: 42px;
+    width: 273px;
+    margin: 0px 0px 8px;
+}
+.contactSectionOneRightLocation{
+    display: flex;
+    
+    height: 86px;
+    width: 273px;
+    margin: 0px 0px 25px;
+}
+.contactSectionOneRightCall{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 273px;
+    margin: 0px 0px 25px;
+}
+.contactSectionOneRightEmail{
+    display: flex;
+    align-items: center;
+    
+    height: 50px;
+    width: 273px;
+    margin: 0px 0px 25px;
+}
+.contactSectionOneRightWeb{
+    display: flex;
+    align-items: center;
+    
+    width: 273px;
+    height: 50px;
+}
+.contactIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px white solid;
+    height: 50px;
+    width: 50px;
+}
+.CSORText{
+    width: 86px;
+    height: auto;
+    padding: 0px 0px 0px 16px;
+}
+.contactSectionOneleftMain{
+    height: 900px;
+    background-color: red;
+}
+.contactSectionOneleftHeader{
+    width: 644px;
+    height: 42px;
+    margin: 0px 0px 24px;
+    background-color: #4986FC;
+}

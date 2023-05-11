@@ -19,7 +19,7 @@ function Login() {
       alert("amjilttai");
       // window.localStorage.setItem("token", JSON.stringify(res.data.token));
       // window.localStorage.setItem("id", JSON.stringify(res.data.data_id));
-      window.location.replace("/SignupPage");
+      window.location.replace("/Mergejil");
       // localStorage.setItem("token");
     } catch (error) {
       alert(error.response.data.error);

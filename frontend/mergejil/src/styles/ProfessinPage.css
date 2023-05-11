@@ -1,0 +1,46 @@
+.ProfessionPageNavbarContainer{
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+}
+.ProfessionPageCourseContainer{
+    width: 100%;
+    height:190vh;
+    position: relative;
+}
+.courseSearchContainer{
+    width: 100%;
+    height: 100px;
+    /* background-color: gray; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ProfessionPageFooterContainer{
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
+    position: relative;
+}
+.courseSearchInput{
+    width: 60%;
+    height: 30px;
+    border-radius: 3px;
+    border: transparent;
+    padding-left: 15px;
+    color: gray;
+
+    background-color: #f2f5fa;
+}
+.cousreSearchIcon{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.courseSearchSearchIcon{
+    position: absolute;
+    right: 440px;
+    color: gray;
+}
