@@ -1,0 +1,8 @@
+.detailContainer{
+    width: 100%;
+    background-color: gray;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}

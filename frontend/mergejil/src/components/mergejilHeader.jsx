@@ -18,7 +18,7 @@ function mergejilHeader() {
               Мэргэжлээ эртнээс сурж мэдэж танилцана гэдэг амжилттай явах гол
               үндэс суурь болдог.
             </p>
-            <Link to={"/Profession"}>
+            <Link to={"/profession"}>
             <button className="mergejilHeaderContentSecondButton">
               Мэргэжил мэргэлэх
             </button>

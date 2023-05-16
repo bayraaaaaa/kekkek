@@ -9,6 +9,6 @@ const router2 = express.Router();
 
 router2.route("/").get(getAllMicroMergejil).post(createMicroMergejil);
 router2.route("/:id").delete(deleteMicroMergejil);
-router2.route("/:params").get(findMicroMergejil);
+router2.route("/:id").get(findMicroMergejil);
 
 export default router2;

@@ -49,10 +49,7 @@ export const deleteMicroMergejil = async (req, res) => {
 
 export const findMicroMergejil = async (req, res) => {
   try {
-    const { params } = req.params;
-    const microMergejil = await MicroMergejil.findOne({
-      Shortlink: params,
-    });
+    const microMergejil = await MicroMergejil.findById(req.params.id);
     res.status(200).send({
       success: true,
       data: microMergejil,

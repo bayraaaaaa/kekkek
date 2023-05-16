@@ -11,6 +11,8 @@ import ContactPage from "./pages/contactPage";
 import CoursePage from "./pages/coursePage"
 import ProfessionPage from "./pages/ProfessionPage";
 import MergejilHeader from "./components/mergejilHeader"
+import PrefessionDetail from "./pages/ProfessionDetail"
+import MicroDetail from "./pages/microDetail";
 function App() {
   const [isLoggedIn, setIsLoggedin] = useState(true);
   const handleLogin = () => {
@@ -29,13 +31,16 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route path="/Instructor" element={<Instructor />}></Route>
-              <Route path="/About" element={< AboutUsPage/>}></Route>
-              <Route path="/SignupPage" element={< SignupPage/>}></Route>
-              <Route path="/Contact" element={< ContactPage/>}></Route>
-              <Route path="/Course" element={< CoursePage/>}></Route>
-              <Route path="/Mergejil" element={< MergejilHeader/>}></Route>
-              <Route path="/Profession" element={< ProfessionPage/>}></Route>
+              <Route path="instructor" element={<Instructor />}></Route>
+              <Route path="about" element={< AboutUsPage/>}></Route>
+              <Route path="signup-page" element={< SignupPage/>}></Route>
+              <Route path="contact" element={< ContactPage/>}></Route>
+              <Route path="course" element={< CoursePage/>}></Route>
+              <Route path="mergejil" element={< MergejilHeader/>}></Route>
+              <Route path="profession" element={< ProfessionPage/>}></Route>
+              <Route path="profession/:professionId" element={< PrefessionDetail/>}> </Route>
+              <Route path="profession/:professionId/:microId" element={< MicroDetail/>}> </Route>
+           
             </Routes>
           </BrowserRouter>
         {/* </>

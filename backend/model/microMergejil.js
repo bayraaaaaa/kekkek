@@ -8,11 +8,19 @@ const microMergejilSchema = new mongoose.Schema({
   description: {
     type: String,
   },
-  image: {
+  hicheel: {
     type: String,
     required: [true],
   },
   user_id: {
+    type : String,
+    required : [true]
+  },
+  tsalin: {
+    type : String,
+    required : [true]
+  },
+  nohtsol: {
     type : String,
     required : [true]
   }
